@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fade In/Out Slide Show Example</title>
+	<script type="text/javascript" src=" http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.FadeWideBgImg.js"></script>
+	<script type="text/javascript">	
+		(function($){		
+		jQuery(document).ready(function(){
+			$('.slideshow').FadeWideBgImg({interval:2000});		
+		});	
+		}(window.jQuery,window));	
+	</script>
+	<style>
+		body{
+			font-size: 12px;
+			font-family: verdana;
+		}
+		h2 {
+			font-size: 14px;
+		}
+		ul > li{
+			line-height: 1.95;
+		}
+	</style>
+</head>
+<body>
+<div style="width:100%;">
+    <ul class="slideshow">		    	    
+    	<li><img src="./img/img001.jpg" alt="슬라이드 이미지"/></li>
+    	<li><img src="./img/img002.jpg" alt="슬라이드 이미지"/></li>
+    	<li><img src="./img/img003.jpg" alt="슬라이드 이미지"/></li>
+	</ul>
+</div>
+<div>
+	<h2>Fade In/Out Slide Show (For Wide Background Image) Plugin</h2>	
+	<ul style="margin-left:10px;">
+		<li>창 크기에 따라 이미지를 세로 중앙 중심으로 스케일링한다.</li>
+		<li>슬라이드 이미지들의 로드가 끝난 후에 이미지를 노출한다.</li>
+		<li>옵션 
+			<ul style="margin-left:0px;">
+				<li>minwidth : 슬라이드 최소 넓이, 숫자 입력 (기본값 1020)</li>
+				<li>height : 슬라이드 높이, 숫자 입력 (기본값 320)</li>
+				<li>speed : 투명해지는 속도, 숫자 입력, 1000 = 1초 (기본값 1000)</li>
+				<li>interval : 전환 간격, 숫자 입력, 1000 = 1초 (기본값 3000)</li>
+				<li>cover :  반투명 커버 사용 여부, true/false (기본값 true)</li>
+			</ul>
+		</li>
+		<li>플러그인 제공 사이트 : <a href="http://werty.co.kr" target="_blank" title="plugin site">werty.co.kr</a></li>
+	</ul>
+</div>
+</body>
+</html>
